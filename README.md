@@ -28,9 +28,6 @@ Set folder with  images in: Image_Dir
 3) Run
  
  
- 
- 
- 
 The code was run on python 2.7 using tensorflow 1.1
 This code is based on Fully convolutional neural nets code: https://github.com/shekkizh/FCN.tensorflow
  published by:Sarath Shekkizhar
