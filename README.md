@@ -1,5 +1,5 @@
 # Reconstructing image from sparsely sampled pixels using fully convolutional neural network (FCN) with valve filters
-Take image in which only small fraction of the pixels are sampled and reconstruct/upsample the full image using fully convolutional neural nets and valve filters (Tensorflow implementation).
+Take image in which only fraction of the pixels are sampled and reconstruct/upsample the full image using fully convolutional neural nets and valve filters (Tensorflow implementation).
 ![](/Image1.png)  ![](/ValveFilterScheme.png)
 
 
