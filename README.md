@@ -25,6 +25,6 @@ Assume that you already have trained model in log_dir, if you dont have trained 
  
 The code was run on python 2.7 using tensorflow 1.1
 This code is based on VGG19 Fully convolutional neural nets supply in: https://github.com/shekkizh/FCN.tensorflow
-By Sarath Shekkizhar mit licence
+By Sarath Shekkizhar with mit licence
 
 
