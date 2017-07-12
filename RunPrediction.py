@@ -20,11 +20,11 @@ import os
 import scipy.misc as misc
 import random
 
-Image_Dir="/media/sagi/1TB/Data_zoo/MIT_SceneParsing/ADEChallengeData2016/images/validation/"# Directory with image to train
-OUTPUT_Dir="/home/sagi/Desktop/OutputDir/"# Directory with image to train
-SamplingRate=0.1 # Fraction of pixels to be sampled from image for training
+Image_Dir="/media/sagi/1TB/Data_zoo/MIT_SceneParsing/ADEChallengeData2016/images/validation/"# Input dir with image for prediction
+OUTPUT_Dir="/home/sagi/Desktop/OutputDir/"# Output directory
+SamplingRate=0.1 # Fraction of pixels to be sampled from image (assume the input image are not already sampled)
 
-logs_dir="logs/" # Were the trained model and all output will be put
+logs_dir="logs/" # Were the trained model and all output will be saved
 Vgg_Model_Dir="Model_zoo/" #Directory of the pretrained VGG model if model not there it will be automatically download
 
 
