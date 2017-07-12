@@ -19,7 +19,7 @@ In: RunPrediction.py
  
 Assume that you already have trained model in log_dir, if you dont have trained model see training section
 1) Set folder with  images in: Image_Dir
-2) Set Sampling rate (hence fraction of pixels) sampled from each 3) image in: SamplingRate, If the images are already sampled (hence most pixels are zero) set SamplingRate value to 1
+2) Set Sampling rate (hence fraction of pixels) sampled from each 3) image in: SamplingRate.
 4) Set the directory in which you want the output image to appear to: OUTPUT_Dir
  
  
