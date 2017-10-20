@@ -36,13 +36,14 @@ def Build_vgg_net(weights, Sampled_image,Binary_Point_Map): #Build and load vgg 
     kernels, bias = loadWeights(0,weights,"conv1_1_img")
     #current = utils.conv2d_basic(current, kernels,bias)  # set Conv layer  with loaded weights and biases note that the current layer is both input and ouput
     conv1_1_img = tf.nn.bias_add(tf.nn.conv2d(Sampled_image, kernels, strides=[1, 1, 1, 1],padding="SAME"),bias)  # Padding same mean the output is same size as input?
-    relu1_1_img = tf.nn.relu(conv1_1_img, name="relu1_1_img")
+    
     #------------------------Conv1_1_b For Second Input---------------------------------------------------------------------
     kernels, bias = loadWeightsFlat(0, weights, "conv1_1_Valve")
     # current = utils.conv2d_basic(current, kernels,bias)  # set Conv layer  with loaded weights and biases note that the current layer is both input and ouput
     conv1_1_Valve = tf.nn.bias_add(tf.nn.conv2d(Binary_Point_Map, kernels, strides=[1, 1, 1, 1], padding="SAME"),bias)  # Padding same mean the output is same size as input?
-    relu1_1_Valve = tf.nn.relu(conv1_1_Valve, name="relu1_1_Valve")
-    relu1_1=relu1_1_Valve*relu1_1_img #multiply response of valve filter in response of image filter
+    
+    conv1_1=conv1_1_Valve*conv1_1_img #multiply response of valve filter in response of image filter
+    relu1_1= tf.nn.relu(conv1_1, name="relu1_1")
     #conv1_1=conv1_1_b+conv1_1_a
     #conv1_1=tf.add(conv1_1_b,conv1_1_a,name="conv1_1")
 
